@@ -34,7 +34,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <!--<img src="img/logo.png" alt="logo"> --> Psychotherapy Central </a>
+                        <a style="font-family: Playfair Display, serif; font-weight: bolder; font-size: x-large;" class="navbar-brand" href="index.html"> <!--<img src="img/logo.png" alt="logo"> --> Psychotherapy Central </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -82,17 +82,14 @@
 
     <!-- banner part start-->
     <section  id="home" class="banner_part">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img class="top_button_icon" src="img\icon\up-arrow.png"></button>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-xl-5">
                     <div class="banner_text">
                         <div class="banner_text_iner">
-                            <h5>We are here for your care</h5>
-                            <h1>Best Care &
-                                Better Doctor</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua. Quis ipsum suspendisse ultrices gravida.Risus cmodo viverra </p>
+                            <h4>We are here for your care</h4>
+                            <h1>Trauma-informed, queer-affirmative psychotherapy</h1>
                             <a href="#contact" class="btn_2">Make an appointment</a>
 
                         </div>
@@ -100,7 +97,7 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="banner_img">
-                        <img src="img/banner_img.png" alt="">
+                        <img src="img/banner_img.jpg" alt="Dr. Harneer Kaur" style="padding-left: 20rem; ">
                     </div>
                 </div>
             </div>
@@ -119,12 +116,19 @@
                 </div>
                 <div class="col-md-6 col-lg-5">
                     <div class="about_us_text">
-                        <h2>About us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                            Quis ipsum suspendisse ultrices gravida. Risus cmodo viverra
-                            maecenas accumsan lacus vel</p>
-                        <a class="btn_2 " href="#">learn more</a>
+                        <h2>About The Therapy</h2>
+                        <p>Psychotherapy is a means of long-term therapy that can take place 
+                            between once and five times a week depending on needs. Often things 
+                            like insomnia, anxiety, phobias, and any out-of-control behaviours, 
+                            thoughts, or feelings are a communication from the subconscious. 
+                            Psychotherapy unravels communication so the benefits can be felt.
+                            Sessions last a 'therapeutic hour' which is approximately fifty to 
+                            sixty minutes. During psychotherapy, psychological interventions can 
+                            be utilized if appropriate. This will always be discussed and the pros 
+                            and cons in your individual circumstances looked at before you make a 
+                            decision about using them. Your therapist will always work in a way that is comfortable to you.
+                        </p>
+                        <a class="btn_2 " href="#contact">Talk To Us</a>
                         <div class="banner_item">
                             <div class="single_item">
                                 <img src="img/icon/banner_1.svg" alt="">
@@ -183,7 +187,7 @@
                 <div class="col-lg-3 col-sm-12">
                     <div class="single_feature">
                         <div class="single_feature_part">
-                            <span class="single_feature_icon"><img src="img/icon/feature_1.svg" alt=""></span>
+                            <span class="single_feature_icon"><img src="img/icon/feature_3.svg" alt=""></span>
                             <h4>Better Future</h4>
                             <p>Darkness multiply rule Which from without life creature blessed
                                 give moveth moveth seas make day which divided our have.</p>
@@ -560,7 +564,27 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </footer>
 
     <!-- footer part end-->
-
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
     <!-- jquery plugins here-->
 
     <script src="js/jquery-1.12.1.min.js"></script>
