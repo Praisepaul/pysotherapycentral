@@ -40,3 +40,13 @@ mailChimp();
 
 
 }(jQuery));
+
+window.addEventListener("load", function() {
+  // Set a timeout for the loader
+  setTimeout(function() {
+    // Hide the loader
+    document.getElementById("loader").style.display = "none";
+    // Show the page content
+    document.getElementById("content").style.display = "block";
+  }, 2500); // Adjust the duration (in milliseconds) as needed
+});

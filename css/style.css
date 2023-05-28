@@ -26,6 +26,14 @@ body {
   scroll-behavior: smooth;
   background-image: url(../img/banner_bg.png);
 }
+/* Loader Styling */
+#loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(163, 241, 163);
+}
 #myBtn {
   display: none;
   position: fixed;
