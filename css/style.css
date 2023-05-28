@@ -34,6 +34,16 @@ body {
   height: 100vh;
   background-color: rgb(163, 241, 163);
 }
+@media (max-width: 767px) {
+  /* line 18, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
+  #loader {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 250px 50px;
+    height: auto;
+  background-color: rgb(163, 241, 163);
+  }
+}
 #myBtn {
   display: none;
   position: fixed;
@@ -53,7 +63,7 @@ body {
   width: 25px;
 }
 #myBtn:hover {
-  background-color: #555;
+  background-color: #07f6e2;
 }
 
 /* line 9, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
