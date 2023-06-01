@@ -83,10 +83,10 @@ input:hover, input:focus {
 
 /* line 18, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
 .section_padding {
-  padding: 140px 0px;
+  padding: 70px 0px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px){
   /* line 18, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
   .section_padding {
     padding: 80px 0px;
@@ -2299,7 +2299,7 @@ ul {
 /* line 11, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_menu.scss */
 .main_menu .navbar-brand {
   padding: 0rem !important;
-  color: #81063b;
+  color: #02555b;
 }
 
 @media (max-width: 576px) {
@@ -2554,17 +2554,17 @@ ul {
   .banner_part {
     background-image: url(../img/banner_bg.png);
     background-size: cover;
-    background-color: #78d4bb;
+    background-color: #9b78d4;
     background-repeat: no-repeat;
     background-position: center;
     height: 650px;
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px){
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
   .banner_part {
-    height: 650px;
+    height: 750px;
   }
 }
 
@@ -2736,7 +2736,7 @@ ul {
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
   .banner_part {
     margin-top: 20px;
-    background-color: #78d4bb;
+    background-color: #ff1f79;
   }
 }
 
@@ -2745,11 +2745,10 @@ ul {
 /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
 .about_us {
   position: relative;
-  z-index: 99;
   background-image: url(../img/about_bg.png);
   background-position: left bottom;
   background-repeat: no-repeat;
-  background-color: #78d4bb;
+  background-color: #ff1f79;
   background-size: 50% 90%;
 }
 
@@ -2786,7 +2785,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px){
   /* line 16, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
   .about_us .about_us_text {
     padding-left: 0;
@@ -3056,8 +3055,8 @@ ul {
 @media only screen and (min-width: 992px){
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
   .feature_part {
-    padding: 160px 0 110px;
-    background-color: #78d4bb;
+    padding: 60px 0 90px;
+    background-color: #ff1f79;
   }
 }
 
@@ -3230,6 +3229,7 @@ ul {
   position: absolute;
   top: 13px;
   left: 75px;
+  color: #ffffff;
 }
 
 @media (max-width: 576px) {
@@ -3260,7 +3260,7 @@ ul {
 
 /* line 155, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
 .feature_part .single_feature_part p {
-  color: #540662;
+  color: #ffffff;
   line-height: 1.8;
   font-size: 15px;
 }
@@ -3542,10 +3542,9 @@ ul {
 /**************** regervation_part css start ****************/
 /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_regervation_part.scss */
 .regervation_part {
-  background-image: url("../img/reservation_bg.png");
   background-position: center;
+  background-image: url(/img/reservation_bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   z-index: 1;
 }
@@ -3558,15 +3557,18 @@ ul {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #1c19ab;
-  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-color: #ff1f79;
   z-index: -1;
 }
 
 /* line 18, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_regervation_part.scss */
 .regervation_part .reservation_img .reservation_img_iner {
   position: absolute;
-  bottom: -370px;
+  bottom: 100px;
+  height: 90rem;
+  width: 250rem;
+  transform: rotateY(180deg);
 }
 
 @media (max-width: 991px) {
@@ -3576,11 +3578,10 @@ ul {
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 1000px){
   /* line 18, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_regervation_part.scss */
   .regervation_part .reservation_img .reservation_img_iner {
     position: absolute;
-    bottom: -312px;
   }
 }
 
@@ -3690,6 +3691,7 @@ ul {
 /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_doctor_list.scss */
 .doctor_part {
   overflow: hidden;
+  background-color: #ff1f79;
 }
 
 @media (max-width: 991px) {
@@ -3788,6 +3790,7 @@ ul {
 
 /* line 79, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_doctor_list.scss */
 .doctor_part .single_blog_item p {
+  color: #ffffff;
   line-height: 14px;
 }
 
@@ -3797,7 +3800,6 @@ ul {
   transition: 0.5s;
   padding: 37px 0 0;
   border: 0px solid transparent !important;
-  background-color: #fff;
 }
 
 @media (max-width: 991px) {
