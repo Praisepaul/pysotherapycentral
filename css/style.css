@@ -2688,6 +2688,7 @@ ul {
     margin-bottom: 15px;
     line-height: 1.4;
     width: revert;
+    color: indigo;
   }
 }
 
@@ -3055,7 +3056,7 @@ ul {
 @media only screen and (min-width: 992px){
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
   .feature_part {
-    padding: 160px 0 550px;
+    padding: 160px 0 110px;
     background-color: #78d4bb;
   }
 }
