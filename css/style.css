@@ -3662,12 +3662,12 @@ ul {
 
 /* line 102, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_regervation_part.scss */
 .regervation_part a:hover {
-  color: #00b7f4; !important;
+  color: #00b7f4 !important;
 }
 
 /* line 107, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_regervation_part.scss */
 .regervation_part ::placeholder {
-  color: #00b7f4; !important;
+  color: #00b7f4 !important;
 }
 
 /* line 110, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_regervation_part.scss */
