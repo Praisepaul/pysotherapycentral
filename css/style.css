@@ -22,7 +22,7 @@ body {
   margin: 0;
   font-size: 14px;
   scroll-behavior: smooth;
-  background-image: url(../img/banner_bg.png);
+  background-image: url("../img/banner_bg.png");
 }
 /* Loader Styling */
 #loader{
@@ -2543,7 +2543,7 @@ ul {
   height: 935px;
   position: relative;
   overflow: hidden;
-  background-image: url(../img/banner_bg.png);
+  background-image: url("../img/banner_bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -2552,7 +2552,7 @@ ul {
 @media (max-width: 991px) {
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
   .banner_part {
-    background-image: url(../img/banner_bg.png);
+    background-image: url("../img/banner_bg.png");
     background-size: cover;
     background-color: #c7fc54;
     background-repeat: no-repeat;
@@ -2750,7 +2750,7 @@ ul {
 /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
 .about_us {
   position: relative;
-  background-image: url(../img/new_about.png);
+  background-image: url("../img/new_about.png");
   background-position: left bottom;
   background-repeat: no-repeat;
   background-color: #daff8d;
@@ -3548,7 +3548,7 @@ ul {
 /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_regervation_part.scss */
 .regervation_part {
   background-position: center;
-  background-image: url(../img/bg_continue.png);
+  background-image: url("../img/bg_continue.png");
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
@@ -3697,7 +3697,7 @@ ul {
 .doctor_part {
   overflow: hidden;
   padding-top: 0px;
-  background-image: url(../img/bg_continue.png);
+  background-image: url("../img/bg_continue.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -3706,7 +3706,7 @@ ul {
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_doctor_list.scss */
   .doctor_part {
     padding: 70px 0 55px;
-    background-image: url(../img/banner_bg.png);
+    background-image: url("../img/banner_bg.png");
     background-repeat: no-repeat;
     background-position-y: bottom;
   }
