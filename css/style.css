@@ -3697,7 +3697,7 @@ ul {
 .doctor_part {
   overflow: hidden;
   padding-top: 0px;
-  background-image: url(img/bg_continue.png);
+  background-image: url(../img/bg_continue.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -3706,7 +3706,7 @@ ul {
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_doctor_list.scss */
   .doctor_part {
     padding: 70px 0 55px;
-    background-image: url(/img/banner_bg.png);
+    background-image: url(../img/banner_bg.png);
     background-repeat: no-repeat;
     background-position-y: bottom;
   }
