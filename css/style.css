@@ -3697,7 +3697,7 @@ ul {
 .doctor_part {
   overflow: hidden;
   padding-top: 0px;
-  background-image: url(/img/bg_continue.png);
+  background-image: url(img/bg_continue.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
