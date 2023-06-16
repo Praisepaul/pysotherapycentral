@@ -958,8 +958,10 @@ ul {
 }
 
 /* line 88, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_menu.scss */
+
 .dropdown-menu {
   border: 0px solid rgba(0, 0, 0, 0.15) !important;
+  left: 60%;
   background-color: #fafafa;
 }
 
