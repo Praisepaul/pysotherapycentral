@@ -1624,7 +1624,8 @@ ul {
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
   .feature_part {
     padding: 60px 0 90px;
-    background-color: rgba(192, 240, 90, 0.906);
+    background-image: url('../img/services_bg.png');
+    background-repeat: no-repeat;
   }
 }
 
@@ -1797,7 +1798,7 @@ ul {
   position: absolute;
   top: 13px;
   left: 75px;
-  color: #e76800;
+  color: #ffffff;
 }
 
 @media (max-width: 576px) {
@@ -1828,7 +1829,7 @@ ul {
 
 /* line 155, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
 .feature_part .single_feature_part p {
-  color: #d45100;
+  color: #ffffff;
   line-height: 1.8;
   font-size: 15px;
   margin-left: 25px;
@@ -2260,7 +2261,7 @@ ul {
 .doctor_part {
   overflow: hidden;
   padding-top: 0px;
-  background-image: url("../img/bg_continue.png");
+  background-image: url("../img/about_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
