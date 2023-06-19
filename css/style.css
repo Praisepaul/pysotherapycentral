@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700&display=swap");
+
 /* line 1, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_extends.scss */
 .btn_1, .btn_2, .regervation_part .btn_2:hover {
   background-image: -webkit-linear-gradient(to right, #649bff, #0070fa, #649bff);
@@ -23,6 +24,7 @@ body {
   font-size: 14px;
   scroll-behavior: smooth;
   background-image: url("../img/banner_bg.png");
+  background-repeat: space;
 }
 /* Loader Styling */
 #loader{
@@ -30,9 +32,47 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(163, 241, 163);
+  animation: bgChange 5s infinite;
   margin: 0;
   padding: 0;
+}
+@keyframes bgChange {
+  0%{
+    background-color: #000000;
+  }
+  70%{
+    background-color: #969696;
+  }
+  100%{
+    background-color: #ffffff;
+  }
+}
+.top, .bottom {
+  display: inline-block;
+  opacity: 0;
+  font-size: xxx-large;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.top {
+  animation-name: moveDown;
+}
+
+.bottom {
+  animation-name: moveUp;
+}
+
+@keyframes moveDown {
+  0% { transform: translateY(-250%); opacity: 0; color: #006400; }
+  50% { transform: translateY(0); opacity: 1; color: #5c00a8;}
+  
+}
+
+@keyframes moveUp {
+  0% { transform: translateY(250%); opacity: 0; color: rgb(234, 43, 10); }
+  50% { transform: translateY(0); opacity: 1; color: #006400;}
 }
 @media (max-width: 767px) {
   /* line 18, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
@@ -41,7 +81,23 @@ body {
     flex-direction: column;
     padding: 250px 50px;
     height: auto;
-  background-color: rgb(163, 241, 163);
+    background-color: rgb(163, 241, 163);
+  }
+  .top, .bottom {
+    display: inline-block;
+    opacity: 0;
+    font-size: xx-large;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+  
+  .top {
+    animation-name: moveDown;
+  }
+  
+  .bottom {
+    animation-name: moveUp;
   }
 }
 #myBtn {
@@ -234,12 +290,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 91, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
 p {
-  color: #f4c151;
   font-family: "Roboto", sans-serif;
   line-height: 1.929;
   font-size: 16px;
   margin-bottom: 0px;
-  color: #0d0234;
+  letter-spacing: 0.7px;
+  color: #000080;
 }
 
 /* line 100, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
@@ -592,7 +648,7 @@ ul {
 /* line 65, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_button.scss */
 .btn_2 {
   display: inline-block;
-  padding: 16px 45px;
+  padding: 16px 25px;
   text-align: center;
   font-size: 14px;
   color: #fff;
@@ -862,7 +918,7 @@ ul {
 /* line 11, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_menu.scss */
 .main_menu .navbar-brand {
   padding: 0rem !important;
-  color: #02555b;
+  color: #000000;
 }
 
 @media (max-width: 576px) {
@@ -961,12 +1017,11 @@ ul {
 
 .dropdown-menu {
   border: 0px solid rgba(0, 0, 0, 0.15) !important;
-  left: 60%;
   background-color: #fafafa;
 }
 
 /* line 94, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_menu.scss */
-.dropdown .dropdown-menu {
+.dropdown:hover .dropdown-menu {
   transition: all 0.5s;
   overflow: hidden;
   transform-origin: top center;
@@ -1082,7 +1137,7 @@ ul {
   position: fixed;
   z-index: 9999 !important;
   width: 100%;
-  background-color: #fff;
+  background-color: #000000;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
   top: 0;
 }
@@ -1096,10 +1151,12 @@ ul {
 .menu_fixed .logo_1 {
   display: none;
 }
-
+.menu_fixed .navbar-brand{
+  color: #ffffff;
+}
 /* line 342, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_menu.scss */
 .menu_fixed .main-menu-item ul li .nav-link {
-  color: #000;
+  color: #ffffff;
 }
 
 /**************** banner part css start ****************/
@@ -1618,14 +1675,17 @@ ul {
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
   .feature_part {
     padding: 70px 0;
-    background-color: #78d4bb;
+    background-image: url('../img/services_bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
   }
 }
 
 @media only screen and (min-width: 992px){
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
   .feature_part {
-    padding: 60px 0 90px;
+    padding: 0px 0 90px;
     background-image: url('../img/services_bg.png');
     background-repeat: no-repeat;
   }
@@ -1800,7 +1860,7 @@ ul {
   position: absolute;
   top: 13px;
   left: 75px;
-  color: #ffffff;
+  color: #006400;
 }
 
 @media (max-width: 576px) {
@@ -1831,10 +1891,10 @@ ul {
 
 /* line 155, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
 .feature_part .single_feature_part p {
-  color: #ffffff;
+  color: #000080;
   line-height: 1.8;
   font-size: 15px;
-  margin-left: 25px;
+  margin-left: 45px;
 }
 
 /* line 162, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */

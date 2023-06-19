@@ -48,5 +48,5 @@ window.addEventListener("load", function() {
     document.getElementById("loader").style.display = "none";
     // Show the page content
     document.getElementById("content").style.display = "block";
-  }, 2500); // Adjust the duration (in milliseconds) as needed
+  }, 4900); // Adjust the duration (in milliseconds) as needed
 });
