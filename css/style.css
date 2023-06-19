@@ -24,7 +24,7 @@ body {
   font-size: 14px;
   scroll-behavior: smooth;
   background-image: url("../img/banner_bg.png");
-  background-repeat: space;
+  background-repeat: repeat;
 }
 /* Loader Styling */
 #loader{
