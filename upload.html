@@ -7,10 +7,52 @@
 
 <body>
     <h1>File Upload</h1>
-    <form action="upload.php" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file">
-        <input type="submit" value="Upload">
-    </form>
+    <input type="file" id="fileInput">
+    <button onclick="uploadFile()">Upload</button>
+
+    <h1>Uploaded Files</h1>
+    <ul id="fileList"></ul>
+
+    <script>
+        function uploadFile() {
+            var fileInput = document.getElementById('fileInput');
+            var file = fileInput.files[0];
+            var formData = new FormData();
+            formData.append('file', file);
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'upload.php', true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    alert(xhr.responseText);
+                    loadFiles();
+                } else {
+                    alert('Error uploading file.');
+                }
+            };
+            xhr.send(formData);
+        }
+
+        function loadFiles() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'files.php', true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    var fileList = document.getElementById('fileList');
+                    fileList.innerHTML = xhr.responseText;
+                } else {
+                    alert('Error loading files.');
+                }
+            };
+            xhr.send();
+        }
+
+        function downloadFile(file) {
+            window.location.href = 'downloads.php?file=' + encodeURIComponent(file);
+        }
+
+        loadFiles();
+    </script>
 </body>
 
 </html>
