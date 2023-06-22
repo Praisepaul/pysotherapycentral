@@ -94,10 +94,8 @@ body {
 @media (max-width: 767px) {
   /* line 18, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
   #loader {
-    align-items: flex-start;
     flex-direction: column;
     padding: 250px 50px;
-    height: auto;
     background-color: rgb(163, 241, 163);
   }
   .top, .bottom {
