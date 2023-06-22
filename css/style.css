@@ -1925,13 +1925,14 @@ ul {
 
 .single_feature_part {
   padding: 0 0 0 0px;
-  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  
 }
 @media (max-width: 991px) {
   /* line 162, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
   .feature_part .single_feature {
     margin-top: 30px;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
   }
 }
 
