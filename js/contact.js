@@ -45,32 +45,8 @@ $(document).ready(function() {
                 }
             },
             submitHandler: function(form) {
-                $(form).ajaxSubmit({
-                  type: "POST",
-                  url: "contact_process.php", // Replace with the correct PHP file path
-                  success: function() {
-                    $('#contactForm :input').attr('disabled', 'disabled');
-                    $('#contactForm').fadeTo("slow", 1, function() {
-                      $(this).find(':input').attr('disabled', 'disabled');
-                      $(this).find('label').css('cursor', 'default');
-                      $('#success').fadeIn();
-                      $('.modal').modal('hide');
-                      $('#success').modal('show');
-        
-                      setTimeout(function() {
-                        window.location.href = "index.html"; // Replace with your main page URL
-                      }, 5000);
-                    });
-                  },
-                  error: function() {
-                    $('#contactForm').fadeTo("slow", 1, function() {
-                      $('#error').fadeIn();
-                      $('.modal').modal('hide');
-                      $('#error').modal('show');
-                    });
-                  }
-                });
-              }
-            });
+                form.submit(); // Submit the form
+            }
+        });
     })(jQuery);
 });
