@@ -1,74 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Create New Post</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-
-        h1 {
-            margin-top: 0;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
-
-        .form-group textarea {
-            height: 200px;
-        }
-
-        .form-group button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .form-group button:hover {
-            background-color: #45a049;
-        }
-    </style>
+  <title>Create New Post</title>
 </head>
 <body>
-    <h1>Create New Post</h1>
-    <form>
-        <div class="form-group">
-            <label for="title">Title</label>
-            <input type="text" id="title" name="title" placeholder="Enter the title of your post" required>
-        </div>
-        <div class="form-group">
-            <label for="sub-title">Sub Title</label>
-            <input type="text" id="sub-title" name="sub-title" placeholder="Enter the sub-title of your post" required>
-        </div>
-        <div class="form-group">
-            <label for="content">Content</label>
-            <textarea id="content" name="content" placeholder="Enter the content of your post" required></textarea>
-        </div>
-        <div class="form-group">
-            <button type="submit">Create Post</button>
-        </div>
-    </form>
+  <h1>Create New Post</h1>
+  <form id="newPostForm" action="save_post.php" method="POST">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required><br>
+    <label for="content">Content:</label>
+    <textarea id="content" name="content" required></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById("newPostForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form submission
+  
+  var title = document.getElementById("title").value;
+  var content = document.getElementById("content").value;
+  
+  // Create a new XMLHttpRequest object
+  var xhr = new XMLHttpRequest();
+  
+  // Define the request URL and method
+  xhr.open("POST", "save_post.php", true);
+  
+  // Set the request header for form data
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  
+  // Define the callback function
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      // Clear the form fields after successful submission
+      document.getElementById("title").value = "";
+      document.getElementById("content").value = "";
+      
+      // Display a success message or perform any additional actions
+      alert("Post created successfully!");
+    }
+  };
+  
+  // Send the request with the form data
+  xhr.send("title=" + encodeURIComponent(title) + "&content=" + encodeURIComponent(content));
+});
+
+  </script>
 </body>
 </html>
