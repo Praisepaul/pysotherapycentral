@@ -26,6 +26,8 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -382,7 +384,7 @@
                 <div class="row align-items-center regervation_content">
                     <div class="col-lg-9">
                         <div class="regervation_part_iner">
-                            <form id="contactForm" method="GET" action="thank_you.html">
+                            <form id="contactForm" action="submit_form.php" method="POST">
                                 <h2>Want to Know More? Connect Now.</h2>
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
@@ -414,8 +416,9 @@
                                     </div>
                                 </div>
                                 <div class="regerv_btn">
-                                    <button type="submit" class="btn_2">Make an Appointment</button>
+                                    <button id="submitButton" type="submit" class="btn_2">Make an Appointment</button>
                                 </div>
+                                
                             </form>
                         </div>
                     </div>

@@ -26,27 +26,50 @@ $(document).ready(function() {
             },
             messages: {
                 name: {
-                    required: "Please enter your name",
-                    minlength: "Your name must consist of at least 2 characters"
+                    required: "<div class='error-message'><span class='error-icon'>!</span>Please enter your name</div>",
+                    minlength: "<div class='error-message'><span class='error-icon'>!</span>Your name must consist of at least 2 characters</div>"
                 },
                 email: {
-                    required: "Please enter your email",
-                    email: "Please enter a valid email address"
+                    required: "<div class='error-message'><span class='error-icon'>!</span>Please enter your email</div>",
+                    email: "<div class='error-message'><span class='error-icon'>!</span>Please enter a valid email address</div>"
                 },
                 service: {
-                    required: "Please select a service"
+                    required: "<div class='error-message'><span class='error-icon'>!</span>Please select a service</div>"
                 },
                 time: {
-                    required: "Please select a time"
+                    required: "<div class='error-message'><span class='error-icon'>!</span>Please select a time</div>"
                 },
                 message: {
-                    required: "Please enter your message",
-                    minlength: "Your message must consist of at least 20 characters"
+                    required: "<div class='error-message'><span class='error-icon'>!</span>Please enter your message</div>",
+                    minlength: "<div class='error-message'><span class='error-icon'>!</span>Your message must consist of at least 20 characters</div>"
                 }
             },
+            
             submitHandler: function(form) {
-                form.submit(); // Submit the form
-            }
-        });
+                // Disable the submit button to prevent multiple submissions
+                $('#submitButton').prop('disabled', true);
+
+                // Display a loading indicator or message if desired
+                $('#loadingIndicator').show();
+
+                // Perform AJAX submission or form submission depending on your needs
+                // Example using AJAX:
+                $.ajax({
+                    type: 'POST',
+                    url: 'submit_form.php',
+                    data: $(form).serialize(),
+                    success: function(response) {
+                      // Handle the successful form submission
+                      // Example: Redirect to the thank you page
+                      window.location.href = 'thank_you.html';
+                    },
+                    error: function() {
+                      // Handle the form submission error
+                      // Example: Display an error message to the user
+                      alert('An error occurred. Please try again.');
+                    }
+                  });
+                }
+              });
     })(jQuery);
 });

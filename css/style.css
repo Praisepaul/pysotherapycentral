@@ -2252,6 +2252,24 @@ background-position-y: bottom;
   color: #000000;
 }
 
+.error-message {
+  background-color: white;
+  color: red;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.error-icon {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(225, 219, 35);
+}
+
+
 @media (max-width: 991px) {
   /* line 32, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_regervation_part.scss */
   .regervation_part .regervation_content h2 {
