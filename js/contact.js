@@ -46,30 +46,8 @@ $(document).ready(function() {
             },
             
             submitHandler: function(form) {
-                // Disable the submit button to prevent multiple submissions
-                $('#submitButton').prop('disabled', true);
-
-                // Display a loading indicator or message if desired
-                $('#loadingIndicator').show();
-
-                // Perform AJAX submission or form submission depending on your needs
-                // Example using AJAX:
-                $.ajax({
-                    type: 'POST',
-                    url: 'submit_form.php',
-                    data: $(form).serialize(),
-                    success: function(response) {
-                      // Handle the successful form submission
-                      // Example: Redirect to the thank you page
-                      window.location.href = 'thank_you.html';
-                    },
-                    error: function() {
-                      // Handle the form submission error
-                      // Example: Display an error message to the user
-                      alert('An error occurred. Please try again.');
-                    }
-                  });
-                }
-              });
+                form.submit(); // Submit the form
+            }
+        });
     })(jQuery);
 });
