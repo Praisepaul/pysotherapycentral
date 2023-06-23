@@ -299,8 +299,8 @@ a:hover {
 
 /* line 87, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
 h1, h2, h3, h4, h5, h6 {
-  color: #242429;
-  font-family: "Playfair Display", serif;
+  color: rgb(58 58 58);
+  font-family: 'Righteous', cursive;
 }
 
 /* line 91, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
@@ -309,7 +309,8 @@ p {
   font-size: 16px;
   margin-bottom: 0px;
   letter-spacing: 0.7px;
-  color: #000080;
+  color: rgb(58 58 58);
+  font-family: 'Righteous', cursive;
 }
 
 /* line 100, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
@@ -474,6 +475,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  color: rgb(58 58 58);
 }
 
 /* line 199, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_common.scss */
@@ -1217,7 +1219,7 @@ ul {
   display: table-cell;
   vertical-align: middle;
   padding-top: 155px;
-  font-family: 'Diphylleia', serif;
+  font-family: 'Righteous', cursive;
 }
 
 @media (max-width: 991px) {
@@ -1322,11 +1324,12 @@ ul {
 @media only screen and (min-width: 992px){
   /* line 72, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
   .banner_part .banner_text h1 {
+    font-family: 'Righteous', cursive;
     font-size: 40px;
     margin-bottom: 15px;
     line-height: 1.4;
     width: revert;
-    color: #5c00a8;
+    color: #3d215c;
   }
 }
 
@@ -1533,7 +1536,8 @@ ul {
 /* line 106, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
 .about_us .about_us_text ul li span {
   margin-right: 10px;
-  color: #0065e1;
+  color: rgb(58 58 58);
+  font-family: 'Righteous', cursive;
   position: absolute;
   top: 16px;
   left: 0;
@@ -1905,7 +1909,8 @@ ul {
 }
 @media (min-width: 1000px) {
   .feature_part .single_feature_part p {
-    color: #000080;
+    color: rgb(58 58 58);
+  font-family: 'Righteous', cursive;
     line-height: 1.8;
     font-size: 15px;
     margin-left: 75px;
