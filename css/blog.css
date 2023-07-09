@@ -22,7 +22,7 @@ body {
   margin: 0;
   font-size: 14px;
   scroll-behavior: smooth;
-  background-image: url("../img/blog_gb.avif");
+  background-image: linear-gradient(#c2c2c2, #969696);
 }
 
 #myBtn {

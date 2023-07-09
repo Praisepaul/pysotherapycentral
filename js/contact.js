@@ -13,15 +13,12 @@ $(document).ready(function() {
                     required: true,
                     email: true
                 },
-                service: {
-                    required: true
-                },
-                time: {
+                phone: {
                     required: true
                 },
                 message: {
                     required: true,
-                    minlength: 20
+                    minlength: 1
                 }
             },
             messages: {
@@ -33,15 +30,12 @@ $(document).ready(function() {
                     required: "<div class='error-message'><span class='error-icon'>!</span>Please enter your email</div>",
                     email: "<div class='error-message'><span class='error-icon'>!</span>Please enter a valid email address</div>"
                 },
-                service: {
-                    required: "<div class='error-message'><span class='error-icon'>!</span>Please select a service</div>"
-                },
-                time: {
-                    required: "<div class='error-message'><span class='error-icon'>!</span>Please select a time</div>"
+                phone: {
+                    required: "<div class='error-message'><span class='error-icon'>!</span>Please enter a valid phone number</div>"
                 },
                 message: {
                     required: "<div class='error-message'><span class='error-icon'>!</span>Please enter your message</div>",
-                    minlength: "<div class='error-message'><span class='error-icon'>!</span>Your message must consist of at least 20 characters</div>"
+                    minlength: "<div class='error-message'><span class='error-icon'>!</span>Your message must consist of at least 1 characters</div>"
                 }
             },
             
