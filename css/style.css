@@ -1639,7 +1639,7 @@ ul {
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_feature_part.scss */
   .feature_part {
     padding: 0px 0;
-    background-color: #c6c6c6;
+    background-color: #ffffff;
   }
 }
 
@@ -2168,6 +2168,7 @@ ul {
 }
 
 /* line 6, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_regervation_part.scss */
+@media (min-width: 1000px){
 .regervation_part:after {
   position: absolute;
   content: "";
@@ -2181,7 +2182,7 @@ background-position-x: right;
 background-position-y: bottom;
   z-index: -1;
 }
-
+}
 /* line 18, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_regervation_part.scss */
 .regervation_part .reservation_img .reservation_img_iner {
   position: absolute;
@@ -2340,7 +2341,7 @@ background-position-y: bottom;
   /* line 2, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_doctor_list.scss */
   .doctor_part {
     padding: 70px 0 55px;
-    background-color: #c6c6c6;
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-position-y: bottom;
   }
