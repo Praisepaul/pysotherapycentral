@@ -979,7 +979,7 @@ ul {
 
 .dropdown-menu {
   border: 0px solid rgba(0, 0, 0, 0.15) !important;
-  background-color: #fafafa;
+  background-color: #a2a2a2;
 }
 
 /* line 94, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_menu.scss */
@@ -1031,7 +1031,7 @@ ul {
     left: 0;
     top: 62px;
     width: 100%;
-    background-color: #fff;
+    background-color: #9e9e9e;
     text-align: center !important;
     box-shadow: 0px 11px 9px -5px rgba(0, 0, 0, 0.2);
   }
@@ -1402,13 +1402,12 @@ ul {
 /* line 53, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
 .about_us .about_us_text p {
   line-height: 1.929;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 576px) {
   /* line 53, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_about_us.scss */
   .about_us .about_us_text p {
-    margin-bottom: 10px;
     font-family: 'Averia Serif Libre', cursive;
     line-height: 20.5px;
   }
@@ -2311,6 +2310,20 @@ background-position-y: bottom;
   margin-bottom: 10px;
   font-size: 14px;
 }
+@media (max-width: 992px) {
+  .regervation_part .btn_2 {
+    margin-top: 10px;
+    background-color: #fff !important;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
 
 /* line 118, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_regervation_part.scss */
 .regervation_part .btn_2:hover {
@@ -2363,12 +2376,10 @@ background-position-y: bottom;
   visibility: visible;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  right: -30px;
+  right: -10px;
   text-align: center;
   padding: 10px 0;
   bottom: 30px;
-  opacity: 0;
-  visibility: hidden;
 }
 
 /* line 29, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_doctor_list.scss */
@@ -2420,20 +2431,38 @@ background-position-y: bottom;
   /* line 67, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_doctor_list.scss */
   .doctor_part .single_blog_item h3 {
     margin-bottom: 10px !important;
+    margin-left: 35px;
+  }
+  .doctor_part .single_blog_item p{
+    font-family: 'Averia Serif Libre', cursive;
+    line-height: 20.5px;
+  }
+  .doctor_part .single_blog_item ul li{
+    color: rgb(58 58 58);
+    font-family: 'Averia Serif Libre', cursive;
+    line-height: 20.5px;
+    margin-left: 5%;
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px){
   /* line 67, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_doctor_list.scss */
   .doctor_part .single_blog_item h3 {
     margin-bottom: 10px !important;
+  }
+  .doctor_part .single_blog_item p{
+    font-family: 'Righteous', cursive;
+  }
+  .doctor_part .single_blog_item ul li{
+    color: rgb(58 58 58);
+    font-family: 'Righteous', cursive; line-height: 23px; margin-left: 5%;
   }
 }
 
 /* line 79, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_doctor_list.scss */
 .doctor_part .single_blog_item p {
-  color: #000000;
-  line-height: 14px;
+  color: rgb(58 58 58);
+  line-height: 20.5px;
 }
 
 /* line 85, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_doctor_list.scss */
@@ -2448,6 +2477,10 @@ background-position-y: bottom;
   /* line 85, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_doctor_list.scss */
   .doctor_part .single_blog_text {
     padding: 22px 0 0;
+  }
+  .doctor_part .single_blog_item p{
+    font-family: 'Averia Serif Libre', cursive;
+    line-height: 20.5px;
   }
 }
 
